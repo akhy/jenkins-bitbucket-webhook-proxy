@@ -11,3 +11,17 @@ A proxy that transforms Bitbucket webhook calls to a format that can trigger Jen
 3. Jenkins' remotely triggered jobs (via webhook) **cannot inspect the request body**
 4. We need commit details from webhook to be **available as build parameters** in Jenkins jobs
   - so we can checkout and build **only those specific commits**
+
+## Running the Proxy
+
+### Running Flask directly
+
+WIP
+
+### Running via Docker
+
+WIP
+
+## Setting up Bitbucket and Jenkins
+
+WIP
