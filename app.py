@@ -5,7 +5,7 @@ from unirest import post
 
 app = Flask(__name__)
 
-@app.route('/build', methods = ['GET', 'POST'])
+@app.route('/build', methods = ['POST'])
 def build():
   jenkins = request.args.get('jenkins')
   jenkins = jenkins if jenkins.startswith('http://') or jenkins.startswith('https://') else 'http://%s' % jenkins
@@ -28,6 +28,11 @@ def build():
     return "Server error"
   else:
     return make_response(response.raw_body, response.code, {})
+
+@app.route('/', methods = ['GET'])
+def index():
+  return "OK"
+
 
 if __name__ == '__main__':
     app.run()
