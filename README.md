@@ -1,5 +1,7 @@
 # Jenkins Bitbucket Webhook Proxy
 
+[![](https://badge.imagelayers.io/akhy/jenkins-bitbucket-webhook-proxy:latest.svg)](https://imagelayers.io/?images=akhy/jenkins-bitbucket-webhook-proxy:latest 'Get your own badge on imagelayers.io')
+
 A proxy that transforms Bitbucket webhook calls to a format that can trigger Jenkins parameterized builds.
 
 ## Why?
