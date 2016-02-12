@@ -40,7 +40,7 @@ docker run -p 5000:5000 -i -t akhy/jenkins-bitbucket-webhook-proxy
 #### Jenkins side
 
 1. Open up your job configuration
-2. Check **"This build is parameterized"** and add a string parameter named **"GIT_SHA"**. This parameter will be provided by our proxy app from Bitbucket webhook.
+2. Check **"This build is parameterized"** and add a string parameter named **"GIT_HASH"**. This parameter will be provided by our proxy app from Bitbucket webhook.
 3. In build triggers section check **Trigger builds remotely** and enter any random authentication token. This token will be used in the next Bitbucket configuration.
 4. Make sure in source code management section, you choose Git. Set **branches to build** to **${GIT_HASH}**
 
